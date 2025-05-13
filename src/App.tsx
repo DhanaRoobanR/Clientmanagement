@@ -1,23 +1,12 @@
-import { Button } from "@mui/material";
+import React from "react";
+import ClientManager from "./containers/ClientManager";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center p-8 bg-white rounded-lg shadow-lg">
-        <h1 className="text-3xl font-semibold text-gray-800 mb-6">
-          Hello React + TypeScript!
-        </h1>
-
-        <Button
-          variant="contained"
-          color="primary"
-          className="py-2 px-4 text-lg"
-        >
-          Click Me
-        </Button>
-      </div>
+    <div className="bg-gray-100 min-h-screen">
+      <ClientManager />
     </div>
   );
-}
+};
 
 export default App;
